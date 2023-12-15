@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 07 12:17:31 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>99 seconds (99153 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the hamburger menu of product page", "Product discription fuctionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (7ad73bfa69908679de73d9c422ea9abc)] -&gt; xpath: //button[@style=&apos;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51090/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad73bfa69908679de73d9c422ea9abc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at helper.Base.waitforelement(Base.java:143)
+	at helper.Base.clickOnElement(Base.java:149)
+	at page.LogOutPage.click_on_hamburger_menu(LogOutPage.java:15)
+	at stepDefination.LogOutPageStep.click_on_hamburger_menu(LogOutPageStep.java:13)
+	at ✽.click on hamburger menu(file:///C:/Automationselenium/com.Bank/src/test/java/features/ProductPage.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1071439482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1071439482'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (7ad73bfa69908679de73d9c422ea9abc)] -&gt; xpath: //button[@style=&apos;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51090/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad73bfa69908679de73d9c422ea9abc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at helper.Base.waitforelement(Base.java:143)
+	at helper.Base.clickOnElement(Base.java:149)
+	at page.LogOutPage.click_on_hamburger_menu(LogOutPage.java:15)
+	at stepDefination.LogOutPageStep.click_on_hamburger_menu(LogOutPageStep.java:13)
+	at ✽.click on hamburger menu(file:///C:/Automationselenium/com.Bank/src/test/java/features/ProductPage.feature:15)
+</pre></div></td>
+<td>26</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the logout fuctionality", "logout functionality of swag labs"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (9396077988ced486f3f0ea3a384fb7fc)] -&gt; xpath: //button[@style=&apos;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51028/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9396077988ced486f3f0ea3a384fb7fc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at helper.Base.waitforelement(Base.java:143)
+	at helper.Base.clickOnElement(Base.java:149)
+	at page.LogOutPage.click_on_hamburger_menu(LogOutPage.java:15)
+	at stepDefination.LogOutPageStep.click_on_hamburger_menu(LogOutPageStep.java:13)
+	at ✽.click on hamburger menu(file:///C:/Automationselenium/com.Bank/src/test/java/features/LogOut.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace948315053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948315053'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (9396077988ced486f3f0ea3a384fb7fc)] -&gt; xpath: //button[@style=&apos;position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51028/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9396077988ced486f3f0ea3a384fb7fc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at helper.Base.waitforelement(Base.java:143)
+	at helper.Base.clickOnElement(Base.java:149)
+	at page.LogOutPage.click_on_hamburger_menu(LogOutPage.java:15)
+	at stepDefination.LogOutPageStep.click_on_hamburger_menu(LogOutPageStep.java:13)
+	at ✽.click on hamburger menu(file:///C:/Automationselenium/com.Bank/src/test/java/features/LogOut.feature:9)
+</pre></div></td>
+<td>26</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with valid details", "Login functionality of Swag Lab"</td>
+<td></td>
+<td>5</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the checkout", "checkout functionality of swag lab"</td>
+<td></td>
+<td>6</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "add and remove the product from discription page", "Product discription fuctionality"</td>
+<td></td>
+<td>7</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the checkout", "checkout functionality of swag lab"</td>
+<td></td>
+<td>7</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the checkout", "checkout functionality of swag lab"</td>
+<td></td>
+<td>6</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+<tr>
+<td title='cucumber.option.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.option.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "add to cart from product page", "add to cart"</td>
+<td></td>
+<td>11</td>
+<td>cucumber.option.TestRunner@3a93b025</td></tr>
+</table><p>
+</body>
+</html>

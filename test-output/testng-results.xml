@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-07T12:17:31 IST" name="Default suite" finished-at="2023-12-07T12:19:10 IST" duration-ms="99153">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-07T12:17:31 IST" name="Default test" finished-at="2023-12-07T12:19:10 IST" duration-ms="99153">
+      <class name="cucumber.option.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:17:31 IST" name="setUpClass" finished-at="2023-12-07T12:17:32 IST" duration-ms="934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@349c4d1c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:17:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:17:43 IST" duration-ms="11568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add to cart from product page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["add to cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:17:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:17:51 IST" duration-ms="7611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate the checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["checkout functionality of swag lab"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:17:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:17:58 IST" duration-ms="6631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate the checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["checkout functionality of swag lab"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:17:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:18:04 IST" duration-ms="6390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate the checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["checkout functionality of swag lab"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:18:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:18:31 IST" duration-ms="26519" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify the logout fuctionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["logout functionality of swag labs"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (9396077988ced486f3f0ea3a384fb7fc)] -> xpath: //button[@style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51028/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9396077988ced486f3f0ea3a384fb7fc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (9396077988ced486f3f0ea3a384fb7fc)] -> xpath: //button[@style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51028}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51028/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9396077988ced486f3f0ea3a384fb7fc
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at helper.Base.waitforelement(Base.java:143)
+at helper.Base.clickOnElement(Base.java:149)
+at page.LogOutPage.click_on_hamburger_menu(LogOutPage.java:15)
+at stepDefination.LogOutPageStep.click_on_hamburger_menu(LogOutPageStep.java:13)
+at ✽.click on hamburger menu(file:///C:/Automationselenium/com.Bank/src/test/java/features/LogOut.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:18:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:18:38 IST" duration-ms="7405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add and remove the product from discription page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discription fuctionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:18:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:19:04 IST" duration-ms="26176" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate the hamburger menu of product page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product discription fuctionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (7ad73bfa69908679de73d9c422ea9abc)] -> xpath: //button[@style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51090/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad73bfa69908679de73d9c422ea9abc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (7ad73bfa69908679de73d9c422ea9abc)] -> xpath: //button[@style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51090/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad73bfa69908679de73d9c422ea9abc
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at helper.Base.waitforelement(Base.java:143)
+at helper.Base.clickOnElement(Base.java:149)
+at page.LogOutPage.click_on_hamburger_menu(LogOutPage.java:15)
+at stepDefination.LogOutPageStep.click_on_hamburger_menu(LogOutPageStep.java:13)
+at ✽.click on hamburger menu(file:///C:/Automationselenium/com.Bank/src/test/java/features/ProductPage.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:19:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-07T12:19:10 IST" duration-ms="5830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate login with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality of Swag Lab"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.option.TestRunner@3a93b025]" started-at="2023-12-07T12:19:10 IST" name="tearDownClass" finished-at="2023-12-07T12:19:10 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.option.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
